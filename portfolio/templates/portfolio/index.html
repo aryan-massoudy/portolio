@@ -1,0 +1,16 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row align-items-center">
+    <div class="col-md-6">
+        <h1 class="display-4">Aryan Massoudy</h1>
+        <h2 class="text-muted">Fachinformatiker für Anwendungsentwicklung</h2>
+        <p class="lead mt-3">Suche ein Praktikum in Berlin zur Weiterentwicklung meiner Fähigkeiten in der Softwareentwicklung.</p>
+        <a href="{% url 'portfolio:contact' %}" class="btn btn-primary btn-lg mt-3">Kontaktieren Sie mich</a>
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'portfolio/img/profile.jpg' %}" alt="Aryan Massoudy" class="img-fluid rounded-circle">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<h1 class="mb-4">Meine Fähigkeiten</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Technische Fähigkeiten</h3>
+        <div class="skill-item mb-3">
+            <h5>Python <span class="float-end">7/10</span></h5>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+            </div>
+        </div>
+        <div class="skill-item mb-3">
+            <h5>MSSQL <span class="float-end">7/10</span></h5>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+            </div>
+        </div>
+        <!-- Add other skills similarly -->
+    </div>
+    
+    <div class="col-md-6">
+        <h3>Sprachen</h3>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Deutsch
+                <span class="badge bg-primary rounded-pill">C1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Englisch
+                <span class="badge bg-primary rounded-pill">Versiert</span>
+            </li>
+            <!-- Add other languages -->
+        </ul>
+        
+        <h3 class="mt-4">Zertifikate</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Berufsprachkurs Deutsch B2</li>
+            <li class="list-group-item">Leben in Deutschland</li>
+            <li class="list-group-item">Integrationskurs Deutsch B1</li>
+        </ul>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h3>Erfolge in der Umschulung</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Python & OOP</h5>
+                    <p class="card-text">89,25% im Abschlusstest</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">MSSQL</h5>
+                    <p class="card-text">96,08% im Lernerfolgstest</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Projektmanagement</h5>
+                    <p class="card-text">100% Punkte erreicht</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

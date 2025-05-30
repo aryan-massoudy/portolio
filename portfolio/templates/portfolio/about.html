@@ -1,0 +1,47 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<h1 class="mb-4">Über Mich</h1>
+<div class="row">
+    <div class="col-md-6">
+        <h3>Zusammenfassung</h3>
+        <p>Vielseitiger Fachinformatiker in der Umschulung mit Kenntnissen in Python, SQL und IT-Projektmanagement. Bachelor in VWL sowie umfassende Erfahrung in Logistik, Administration und Multimedia-Produktion, die meine Flexibilität und organisatorischen Fähigkeiten fördert.</p>
+        <p>Ziel: Einstieg und Weiterentwicklung in der Softwareentwicklung, um meine IT-Karriere in einem innovativen und dynamischen Team zu starten.</p>
+    </div>
+    <div class="col-md-6">
+        <h3>Ausbildung</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>Fachinformatiker für Anwendungsentwicklung</strong><br>
+                IBB Institut für Berufliche Bildung AG<br>
+                08/2024 - VSL 08/2026, Berlin
+            </li>
+            <li class="list-group-item">
+                <strong>Volkswirtschaftslehre mit Bachelor-Abschluss</strong><br>
+                Universität Kabul<br>
+                03/2011 - 11/2014, Kabul
+            </li>
+        </ul>
+    </div>
+</div>
+
+<h3 class="mt-4">Berufserfahrung</h3>
+<div class="accordion" id="experienceAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Logistics Officer - Mercy Corps (02/2020 - 07/2021)
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#experienceAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li>Verwaltung und Pflege umfassender Fahrzeug- und Asset-Datenbanken</li>
+                    <li>Analyse von Datentrends zur Optimierung der Flottennutzung</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Add other experiences similarly -->
+</div>
+{% endblock %}
